@@ -32,7 +32,7 @@ The project is split into two independent applications:
 ```text
 backend/
 ├── public/
-│   └── images/              # Product and UI assets served statically
+│   └── images/              # Products and UI assets served statically
 ├── scripts/
 │   └── enforce-bun.js       # Prevents usage of package managers other than Bun
 ├── src/
@@ -117,31 +117,3 @@ The project was completed in **3 days** out of the allocated **7-day timeline**.
 
 - Configured API integration between frontend and backend.
 - Implemented application business logic and state management.
-
----
-
-## Key Implementations
-
-### Backend
-
-- Built an **Express.js** server to provide API endpoints.
-- Served mock data for frontend integration and testing.
-
-### State Management
-
-- Used **Zustand** for global state management.
-- Persisted application state using **localStorage** to maintain user selections across page refreshes.
-
-### Business Logic
-
-Implemented dynamic price calculation based on user selections, including:
-
-- Cameras
-- Sensors
-- Accessories
-- Subscription Plan
-
-### User Experience
-
-- Cached system state to improve continuity during page reloads.
-- Synchronized user selections and pricing updates throughout the application.
