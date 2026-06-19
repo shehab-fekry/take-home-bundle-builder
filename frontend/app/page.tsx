@@ -12,10 +12,11 @@ import PlanCard from '@/src/components/cards/plan-card';
 import { PlanItem, ProductItem } from '@/src/core/apis/@types';
 import Summery from '@/src/components/summery';
 import { useCheckoutStore } from '@/src/core/store';
+import Spinner from '@/src/components/spinner';
 
 export default function Home() {
   // apis
-  const { data } = useGetDataQuery();
+  const { data, isPending } = useGetDataQuery();
   // store
   const { loadCheckoutStore } = useCheckoutStore();
   // states
@@ -26,16 +27,19 @@ export default function Home() {
     loadCheckoutStore();
   },[])
 
-  if(!data) return <div className='w-full h-screen text-center'>Loading...</div>;
+  if(!data && isPending) return <div className='w-full h-screen flex items-center justify-center'><Spinner /></div>;
+
+  if(!data && !isPending) return <div className='w-full h-screen flex items-center justify-center'>Somthing Went Wrong!</div>;
 
   const openItem = (itemKey: string) => {
     setStep(itemKey);
   };
 
   return (
-    <div className='w-full flex flex-col gap-10 py-14 px-5 md:px-10 xl:flex-row 2xl:px-30'>
+    <div className='w-full flex flex-col items-center px-5 py-8 sm:items-start sm:py-14 sm:gap-10 md:px-10 xl:flex-row 2xl:px-30 '>
+      <h1 className='text-[32px] font-bold text-textPrimary-200 block sm:hidden'>Let’s get started!</h1>
      {/* Category accordions */}
-      <section className=' xl:w-[70%]'>
+      <section className=' xl:w-[70%] mt-5 sm:mt-0'>
         <Accordion 
         transition
         transitionTimeout={250}

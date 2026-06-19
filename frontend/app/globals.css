@@ -46,7 +46,7 @@ body {
 }
 
 /* -----------------------------------------------------------
-Accordion related styles 
+  Accordion related styles 
 -------------------------------------------------------------*/
 
 .chevron {
@@ -56,4 +56,20 @@ Accordion related styles
 
 .itemBtnExpanded .chevron {
   transform: rotate(180deg);
+}
+
+/* -----------------------------------------------------------
+  Spinner related styles 
+-------------------------------------------------------------*/
+
+/* ===== Simple Spinner ===== */
+.loader {
+  background-color: transparent;
+  height: 70px;
+  width: 70px;
+  border: 10px solid lightgray;
+  border-top-color: var(--primary);
+  border-radius: 50%;
+  animation: spin 1s infinite;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }

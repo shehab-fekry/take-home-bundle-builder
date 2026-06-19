@@ -62,7 +62,7 @@ const Summery = ({ setStep }:{ setStep: Dispatch<SetStateAction<string>> }) => {
     }
 
     return (
-        <section className='h-fit xl:w-[30%] border-none bg-primary-light-100 rounded-t-xl py-4 px-6'>
+        <section className='h-fit xl:w-[30%] border-none bg-primary-light-100 rounded-t-xl py-4 px-6 mt-10 sm:mt-0'>
             <p className='text-[12px] font-normal text-textSecondary-200 tracking-wide'>REVIEW</p>
             <div className='flex flex-col mt-2'>
                 <h1 className='text-[22px] font-semibold text-textPrimary-200 tracking-wide'>Your security system</h1>

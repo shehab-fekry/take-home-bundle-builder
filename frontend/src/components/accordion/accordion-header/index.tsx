@@ -26,7 +26,7 @@ const AccordionHeader = ({
     } = useCheckoutStore();
     
     const ProductsCount = useMemo(() => {
-        return [...new Set(products[accessKey as keyof typeof products]?.map(prod => prod.id))].length;
+        return accessKey === 'plans' ? null : [...new Set(products[accessKey as keyof typeof products]?.map(prod => prod.id))].length;
     }, [accessKey, products]);
             
     return (
@@ -35,10 +35,13 @@ const AccordionHeader = ({
             <div className='w-full flex flex-row justify-between items-center px-4'>
                 <div className='flex flex-row gap-2 items-center'>
                     {icon}
-                    <p className='text-[22px] font-semibold mt-1 tracking-wide'>{title}</p>
+                    <p className='text-[18px] sm:text-[22px] font-semibold mt-1 tracking-wide'>{title}</p>
                 </div>
                 <div className='flex flex-row items-center'>
-                    <p className='text-[14px] font-medium text-primary'>{ProductsCount} selected</p>
+                    <p className='text-[14px] font-medium text-primary mt-1'>
+                        {accessKey === 'plans' && plan ? 1 : accessKey === 'plans' && !plan ? 0 :  ProductsCount}{' '}
+                        selected
+                    </p>
                     <MdOutlineArrowDropDown className='text-primary w-6 h-6 chevron' />
                 </div>
             </div>
