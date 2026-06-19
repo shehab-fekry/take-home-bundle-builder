@@ -1,0 +1,152 @@
+{
+  "cameras": [
+    {
+      "id": 1,
+      "name": "Wyze Cam v4",
+      "url": "http://localhost:8080/images/camera4.png",
+      "description": "The clearest Wyze Cam ever made with enhanced color night vision and crystal-clear 2.5K resolution.",
+      "colors": [
+        { "color": "White", "url": "http://localhost:8080/images/camera4-white.png" },
+        { "color": "Grey", "url": "http://localhost:8080/images/camera4-grey.png" },
+        { "color": "Black", "url": "http://localhost:8080/images/camera4-black.png" }
+      ],
+      "original_price": 35.98,
+      "discounted_price": 27.98,
+      "discount_percentage": 22
+    },
+    {
+      "id": 2,
+      "name": "Wyze Cam Pan v3",
+      "url": "http://localhost:8080/images/camera1.png",
+      "description": "360° pan and 180° tilt security camera with weather resistance for indoor and outdoor use.",
+      "colors": [
+        { "color": "White", "url": "http://localhost:8080/images/camera1-white.png" },
+        { "color": "Black", "url": "http://localhost:8080/images/camera1-black.png" }
+      ],
+      "original_price": 39.98,
+      "discounted_price": 34.98,
+      "discount_percentage": 12
+    },
+    {
+      "id": 3,
+      "name": "Wyze Cam Floodlight v2",
+      "url": "http://localhost:8080/images/camera3.png",
+      "description": "2K floodlight camera with a 160° wide-angle view and powerful illumination for driveways and garages.",
+      "colors": [
+        { "color": "White", "url": "http://localhost:8080/images/camera3-white.png" },
+        { "color": "Black", "url": "http://localhost:8080/images/camera3-black.png" }
+      ],
+      "original_price": 89.98,
+      "discounted_price": 69.98,
+      "discount_percentage": 22
+    },
+    {
+      "id": 4,
+      "name": "Wyze Duo Cam Doorbell",
+      "url": "http://localhost:8080/images/camera5.png",
+      "description": "Dual-camera smart doorbell that captures both visitors and delivered packages with complete porch coverage.",
+      "colors": [],
+      "original_price": null,
+      "discounted_price": 69.98,
+      "discount_percentage": null
+    },
+    {
+      "id": 5,
+      "name": "Wyze Battery Cam Pro",
+      "url": "http://localhost:8080/images/camera2.png",
+      "description": "Wire-free security camera with 2.5K HDR video, rechargeable battery, and easy installation anywhere.",
+      "colors": [
+        { "color": "White", "url": "http://localhost:8080/images/camera2-white.png" },
+        { "color": "Black", "url": "http://localhost:8080/images/camera2-black.png" }
+      ],
+      "original_price": null,
+      "discounted_price": 89.98,
+      "discount_percentage": null
+    }
+  ],
+  "plans": [
+    {
+      "id": "lite",
+      "name": "Lite",
+      "description": "Essential cloud recording for a small number of cameras.",
+      "price": 4.99,
+      "billingPeriod": "month",
+      "camerasIncluded": 2,
+      "features": [
+        "7-day cloud recording",
+        "Motion event notifications",
+        "Person detection",
+        "Web and mobile access"
+      ]
+    },
+    {
+      "id": "unlimited",
+      "name": "Unlimited",
+      "description": "Protect every camera in your home with unlimited coverage.",
+      "price": 12.99,
+      "billingPeriod": "month",
+      "camerasIncluded": "Unlimited",
+      "recommended": true,
+      "features": [
+        "Unlimited cameras",
+        "30-day cloud recording",
+        "Smart event detection",
+        "Person, package & vehicle detection",
+        "Web and mobile access"
+      ]
+    },
+    {
+      "id": "unlimited-pro",
+      "name": "Unlimited Pro",
+      "description": "Advanced AI monitoring and extended video history.",
+      "price": 19.99,
+      "billingPeriod": "month",
+      "camerasIncluded": "Unlimited",
+      "features": [
+        "Everything in Cam Unlimited",
+        "60-day cloud recording",
+        "Advanced AI search",
+        "Priority alerts",
+        "Multi-property support",
+        "Priority customer support"
+      ]
+    }
+  ],
+  "sensors": [
+    {
+      "id": 6,
+      "name": "Wyze Sense Motion Sensor",
+      "url": "http://localhost:8080/images/sensor1.png",
+      "description": "Compact motion sensor that detects movement and triggers alerts or automations throughout your home.",
+      "colors": [],
+      "original_price": 69.98,
+      "discounted_price": 59.98,
+      "discount_percentage": 14,
+      "required": false
+    },
+    {
+      "id": 7,
+      "name": "Wyze Sense Hub",
+      "url": "http://localhost:8080/images/sensor2.png",
+      "description": "Central hub that connects and manages all Wyze Sense devices for reliable home monitoring.",
+      "colors": [],
+      "original_price": null,
+      "discounted_price": 19.92,
+      "discount_percentage": null,
+      "required": true
+    }
+  ],
+  "accessories": [
+    {
+      "id": 8,
+      "name": "Wyze MicroSD Card (256GB)",
+      "url": "http://localhost:8080/images/sd-card.png",
+      "description": "High-capacity microSD card for continuous local video recording and playback.",
+      "colors": [],
+      "original_price": 49.96,
+      "discounted_price": 41.96,
+      "discount_percentage": 16,
+      "required": false
+    }
+  ]
+}

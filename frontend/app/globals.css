@@ -1,0 +1,59 @@
+@import 'tailwindcss';
+
+:root {
+  /* Brand */
+  --primary: #4E2FD2;
+  --primary-light-100: #EDF4FF;
+  --primary-light-200: #F0F4F7;
+
+  /* Text */
+  --text-primary-100: #0B0D10;
+  --text-primary-200: #1F1F1F;
+  --text-secondary-100: #6F7882;
+  --text-secondary-200: #484848;
+  --text-secondary-300: #A8B2BD;
+  --text-secondary-400: #525963;
+
+  /* Status */
+  --error: #D8392B;
+  --success: #0AA288;
+  --blue: #0046C7;
+}
+
+@theme inline {
+  /* fonts */
+  --font-gilroy: var(--gilroy-regular);
+  /* colors */
+  --color-primary: var(--primary);
+  --color-primary-light-100: var(--primary-light-100);
+  --color-primary-light-200: var(--primary-light-200);
+
+  --color-textPrimary-100: var(--text-primary-100);
+  --color-textPrimary-200: var(--text-primary-200);
+
+  --color-textSecondary-100: var(--text-secondary-100);
+  --color-textSecondary-200: var(--text-secondary-200);
+  --color-textSecondary-300: var(--text-secondary-300);
+  --color-textSecondary-400: var(--text-secondary-400);
+
+  --color-error: var(--error);
+  --color-success: var(--success);
+  --color-blue: var(--blue);
+}
+
+body {
+  font-family: var(--font-gilroy);
+}
+
+/* -----------------------------------------------------------
+Accordion related styles 
+-------------------------------------------------------------*/
+
+.chevron {
+  /* margin-left: auto; */
+  transition: transform 0.25s cubic-bezier(0, 0, 0, 1);
+}
+
+.itemBtnExpanded .chevron {
+  transform: rotate(180deg);
+}
