@@ -2,6 +2,14 @@
 
 ## Quick Start
 
+> [!IMPORTANT]
+> The project expects the following ports:
+>
+> - Frontend: `http://localhost:3000`
+> - Backend: `http://localhost:8080`
+>
+> If either port is changed, the API configuration must be updated accordingly.
+
 ### Prerequisites
 
 This project uses **Bun** as the package manager and runtime for both the frontend and backend applications.
