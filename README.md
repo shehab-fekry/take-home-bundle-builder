@@ -112,13 +112,20 @@ The project was completed in **3 days** out of the allocated **7-day timeline**.
 
 - Implemented the backend server.
 - Created API endpoint to serve application data.
+- Configured API integration between frontend and backend.
 
 ### Day 2
 
+- Implemented colors and font configurations.
 - Built the frontend user interfaces.
 - Implemented responsive layouts and user interactions.
 
 ### Day 3
 
-- Configured API integration between frontend and backend.
 - Implemented application business logic and state management.
+
+---
+
+## Notes
+
+- (shipping fast) and (saving) parts in the review panel is left static (not mentioned in instructions).

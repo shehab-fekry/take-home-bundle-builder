@@ -147,7 +147,7 @@ const Summery = ({ setStep }:{ setStep: Dispatch<SetStateAction<string>> }) => {
                 </div>
                 <div className='flex flex-col leading-none'>
                     <p className='text-[16px] text-textSecondary-100 leading-none line-through'>$100</p>                                                                                             
-                    <p className='text-[16px] text-primary'>$190</p>
+                    <p className='text-[16px] font-semibold text-primary'>FREE</p>
                 </div>
             </div>
             {/* Total */}
