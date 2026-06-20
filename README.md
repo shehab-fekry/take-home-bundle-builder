@@ -128,4 +128,4 @@ The project was completed in **3 days** out of the allocated **7-day timeline**.
 
 ## Notes
 
-- **shipping fast** and **saving** parts in the review panel is left static (not mentioned in instructions).
+- **shipping fast** part in the review panel are left **static** (not mentioned in instructions).

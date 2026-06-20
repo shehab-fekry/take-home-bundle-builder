@@ -42,6 +42,18 @@ const Summery = ({ setStep }:{ setStep: Dispatch<SetStateAction<string>> }) => {
             0
         );
     }, [products]);
+    const totalSavings = useMemo(() => {
+        return Object.values(products)
+          .flatMap((items) => items ?? [])
+          .reduce((sum, item) => {
+            if (item.original_price == null) return sum;
+      
+            return (
+              sum +
+              (item.original_price - (item.discounted_price ?? 0)) * item.quantity
+            );
+          }, 0);
+      }, [products]);
     const totalPrice = totalDiscountedPrice + (plan?.price || 0);
     const accessKeys = Object.keys(products);
     const cachedCheckout = localStorage.getItem('checkoutStore');
@@ -160,14 +172,16 @@ const Summery = ({ setStep }:{ setStep: Dispatch<SetStateAction<string>> }) => {
                         as low as $19.19/mo
                     </div>
                     <div className='flex flex-row items-center justify-end gap-2'>
-                        {totalOriginalPrice !== 0 && <p className='text-[18px] text-textSecondary-100 font-medium leading-none line-through'>${totalOriginalPrice.toFixed(2)}</p> }                                                                                            
+                        {totalOriginalPrice !== 0 && <p className='text-[18px] text-textSecondary-100 font-medium leading-none line-through'>
+                            ${totalOriginalPrice.toFixed(2)}
+                        </p> }                                                                                            
                         <p className='text-[24px] font-bold text-primary'>${totalPrice.toFixed(2)}</p>
                     </div>
                 </div>
             </div>
             {/* actions */}
             <div className='flex flex-col items-center justify-center gap-2 mt-3'>
-                <p className='text-[12px] text-success font-semibold'>Congrats! You’re saving $50.92 on your security bundle!</p>
+                <p className='text-[12px] text-success font-semibold tracking-wide'>Congrats! You’re saving ${totalSavings.toFixed(2)} on your security bundle!</p>
                 <button
                 className={`w-[70%] sm:w-[50%] xl:w-full rounded-lg py-3 text-[17px] font-bold transition cursor-pointer bg-primary text-white`}
                 >
