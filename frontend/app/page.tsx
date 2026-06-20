@@ -36,10 +36,10 @@ export default function Home() {
   };
 
   return (
-    <div className='w-full flex flex-col items-center px-5 py-8 sm:items-start sm:py-14 sm:gap-10 md:px-10 xl:flex-row 2xl:px-30 '>
+    <div className='w-full flex flex-col items-center sm:px-5 pt-8 sm:items-start sm:py-14 sm:gap-10 md:px-10 xl:flex-row 2xl:px-30 '>
       <h1 className='text-[32px] font-bold text-textPrimary-200 block sm:hidden'>Let’s get started!</h1>
      {/* Category accordions */}
-      <section className=' xl:w-[70%] mt-5 sm:mt-0'>
+      <section className='w-full xl:w-[70%] mt-5 sm:mt-0'>
         <Accordion 
         transition
         transitionTimeout={250}

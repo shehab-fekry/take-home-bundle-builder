@@ -62,7 +62,7 @@ const Summery = ({ setStep }:{ setStep: Dispatch<SetStateAction<string>> }) => {
     }
 
     return (
-        <section className='h-fit xl:w-[30%] border-none bg-primary-light-100 rounded-t-xl py-4 px-6 mt-10 sm:mt-0'>
+        <section className='h-fit w-full xl:w-[30%] border-none bg-primary-light-100 sm:rounded-t-xl py-4 px-6 mt10 sm:mt-0'>
             <p className='text-[12px] font-normal text-textSecondary-200 tracking-wide'>REVIEW</p>
             <div className='flex flex-col mt-2'>
                 <h1 className='text-[22px] font-semibold text-textPrimary-200 tracking-wide'>Your security system</h1>
@@ -169,7 +169,7 @@ const Summery = ({ setStep }:{ setStep: Dispatch<SetStateAction<string>> }) => {
             <div className='flex flex-col items-center justify-center gap-2 mt-3'>
                 <p className='text-[12px] text-success font-semibold'>Congrats! You’re saving $50.92 on your security bundle!</p>
                 <button
-                className={`w-full rounded-lg py-3 text-[17px] font-bold transition cursor-pointer bg-primary text-white`}
+                className={`w-[70%] sm:w-[50%] xl:w-full rounded-lg py-3 text-[17px] font-bold transition cursor-pointer bg-primary text-white`}
                 >
                     Checkout
                 </button>
