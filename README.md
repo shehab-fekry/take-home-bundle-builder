@@ -5,6 +5,7 @@
 > [!IMPORTANT]
 > The project expects the following ports:
 >
+> - Node version: v22.13.1
 > - Frontend: `http://localhost:3000`
 > - Backend: `http://localhost:8080`
 > If either port is changed, the API configuration must be updated accordingly.
