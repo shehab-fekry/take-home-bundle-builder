@@ -25,6 +25,21 @@ bun run dev
 
 ---
 
+## Technologies Used
+
+| Technology | Usage |
+|------------|--------|
+| Bun | Runtime and package manager |
+| Next.js | Frontend framework |
+| Express.js | Backend API server |
+| Tailwind CSS | Styling and responsive layouts |
+| Zustand | Global state management |
+| localStorage | Persisting user selections |
+| TanStack Query (React Query) | API fetching and caching |
+| @szhsin/react-accordion | Accordion components |
+
+---
+
 ## Project Structure
 
 The project is split into two independent applications:
