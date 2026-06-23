@@ -3,7 +3,7 @@
 ## Quick Start
 
 > [!IMPORTANT]
-> The project expects the following ports:
+> The project expects the following:
 >
 > - Node version: `v22.13.1`
 > - Frontend: `http://localhost:3000`
@@ -71,7 +71,7 @@ backend/
 
 #### Backend Responsibilities
 
-- Serves product and plan data through REST APIs.
+- Serves products and plans data through REST APIs.
 - Hosts static assets such as camera and sensor images.
 - Centralizes route registration and error handling.
 - Uses a JSON file as a lightweight mock database.
@@ -142,6 +142,7 @@ The project was completed in **3 days** out of the allocated **7-day timeline**.
 
 ---
 
-## Notes
+## Notes & Decisions
 
+- This is a **pixel-perfect design implementation** with no personal touch, as mentioned in the job description.
 - **shipping fast** and **satisfaction-guarantee** parts in review panel are left **static** (not mentioned in instructions).
